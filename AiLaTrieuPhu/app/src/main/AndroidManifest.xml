@@ -13,6 +13,17 @@
         android:theme="@style/Theme.AiLaTrieuPhu"
         tools:targetApi="31">
         <activity
+            android:name=".HighScoreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PlayerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_player"
+            android:theme="@style/Theme.AiLaTrieuPhu" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
