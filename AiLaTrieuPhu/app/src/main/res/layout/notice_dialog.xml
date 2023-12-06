@@ -44,7 +44,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:background="@drawable/btn_radius"
-            android:text="Sẵn sàng"
+            android:text="Đồng ý"
             android:textSize="18dp"
             android:textAllCaps="false"
             android:textColor="#ffffff" />
