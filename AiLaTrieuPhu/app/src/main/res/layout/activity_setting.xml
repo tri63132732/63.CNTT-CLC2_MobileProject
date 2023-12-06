@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
             android:layout_toRightOf="@+id/iv_music"
-            android:text="Nhạc"
+            android:text="Nhạc nền"
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:textStyle="bold" />
