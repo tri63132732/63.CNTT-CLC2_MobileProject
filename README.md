@@ -1,1 +1,1 @@
-# 63.CNTT-CLC2_MobileProject
+Dự án kết thúc môn lập trình andoroid
