@@ -1,4 +1,6 @@
 package com.nguyentrongtri.ailatrieuphu;
+
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -9,8 +11,10 @@ import android.view.ViewGroup;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
 
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
@@ -38,7 +42,7 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                //App.getMusicPlayer().playBgMusic(R.raw.bgmusic);
+                App.getMusicPlayer().playBgMusic(R.raw.bgmusic);
             }
         }, 2500);
     }
@@ -46,36 +50,29 @@ public class HomeFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onResume() {
         super.onResume();
-        //App.getMusicPlayer().resumeBgMusic();
+        App.getMusicPlayer().resumeBgMusic();
     }
 
     @Override
     public void onPause() {
         super.onPause();
-        //App.getMusicPlayer().pauseBgMusic();
+        App.getMusicPlayer().pauseBgMusic();
     }
 
     @Override
-    public void onClick(View v) {
-        /*switch (v.getId()) {
-            case R.id.btn_setting:
-                Intent intent = new Intent(getContext(), SettingActivity.class);
-                startActivity(intent);
-                break;
-            case R.id.btn_play:
-                Intent intent1 = new Intent(getContext(), PlayerActivity.class);
-                startActivity(intent1);
-                break;
-            case R.id.btn_high_score:
-                Intent intent2 = new Intent(getContext(), HighScoreActivity.class);
-                startActivity(intent2);
-                break;
-            case R.id.btn_about:
-                AboutDialog aboutDialog = new AboutDialog(getContext());
-                aboutDialog.show();
-                break;
-            default:
-                break;
-        }*/
+    public void onClick(@NonNull View v) {
+        if (v.getId() == R.id.btn_setting) {
+            Intent intent = new Intent(getContext(), SettingsActivity.class);
+            startActivity(intent);
+        } else if (v.getId() == R.id.btn_play) {
+            Intent intent1 = new Intent(getContext(), PlayerActivity.class);
+            startActivity(intent1);
+        } else if (v.getId() == R.id.btn_high_score) {
+            Intent intent2 = new Intent(getContext(), HighScoreActivity.class);
+            startActivity(intent2);
+        } else if (v.getId() == R.id.btn_about) {
+            AboutDialog aboutDialog = new AboutDialog(getContext());
+            aboutDialog.show();
+        }
     }
 }

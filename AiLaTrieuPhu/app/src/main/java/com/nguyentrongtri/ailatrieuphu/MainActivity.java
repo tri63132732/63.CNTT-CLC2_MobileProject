@@ -1,11 +1,13 @@
 package com.nguyentrongtri.ailatrieuphu;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
+
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
     public void onBackPressed() {
         final NoticeDialog noticeDialog = new NoticeDialog(this);
         noticeDialog.setCancelable(true);
-        noticeDialog.setNotification("Bạn có muốn thoát?", "Bỏ qua", "Đồng ý", new View.OnClickListener() {
+        noticeDialog.setNotification("Bạn muốn thoát trò chơi ?", "Đồng ý", "Hủy", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (v.getId() == R.id.btn_ok) {
-                    //App.getMusicPlayer().stopBgMusic();
+                    App.getMusicPlayer().stopBgMusic();
                     finish();
 
                 }

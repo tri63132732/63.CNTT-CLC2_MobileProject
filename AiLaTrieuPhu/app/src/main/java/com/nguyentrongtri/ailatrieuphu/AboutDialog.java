@@ -6,6 +6,7 @@ import android.view.Window;
 import android.widget.LinearLayout;
 
 
+
 public class AboutDialog extends Dialog {
     public AboutDialog(Context context) {
         super(context);
