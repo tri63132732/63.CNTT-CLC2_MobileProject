@@ -20,7 +20,7 @@ public class DatabaseManager {
     private String DATABASE_NAME = "Question";
     private String DATABASE_PATH =
             Environment.getDataDirectory().getAbsolutePath()
-                    + "/data/thanggun99.ailatrieuphu/databases";
+                    + "/data/com.nguyentrongtri.ailatrieuphu/databases";
 
     private static final String SQL_GET_15_QUESTION = "select * from (select* from Question order by random()) group by level order by level limit 15";
 
