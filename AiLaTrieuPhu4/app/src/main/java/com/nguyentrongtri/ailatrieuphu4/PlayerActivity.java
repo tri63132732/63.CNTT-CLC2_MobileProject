@@ -199,7 +199,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
             public void onCompletion(MediaPlayer mp) {
                 App.getMusicPlayer().stop();
                 noticeDialog.setCancelable(false);
-                noticeDialog.setNotification("Báº¡n Ä‘Ã£ sáºµn sÃ ng chÆ¡i vá»›i chÃºng tÃ´i ?", "Sáºµn sÃ ng", "Bá» qua", new View.OnClickListener() {
+                noticeDialog.setNotification("Bạn đã sãn sàng chơi với chúng tôi ?", "Sẵn sàng", "Bỏ qua", new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
                         if(v.getId()==R.id.btn_cancle){
@@ -278,7 +278,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
         tvCase[1].setBackgroundResource(R.drawable.player_answer_background_normal);
         tvCase[2].setBackgroundResource(R.drawable.player_answer_background_normal);
         tvCase[3].setBackgroundResource(R.drawable.player_answer_background_normal);
-        tvLevel.setText("CÃ¢u: " + ques.getLevel());
+        tvLevel.setText("Câu: " + ques.getLevel());
         tvQuestion.setText(ques.getQuestion());
         tvCase[0].setText("A: " + ques.getCaseA());
         tvCase[1].setText("B: " + ques.getCaseB());
@@ -300,7 +300,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
 
     private void getNewQuestion() {
         if (level == 15) {
-            noticeDialog.setNotification("ChÃºc má»«ng báº¡n Ä‘Ã£ vÆ°á»£t qua 15 cÃ¢u há»i", "ÄÃ³ng", null, null);
+            noticeDialog.setNotification("Chúc mừng bạn đã vượt qua 15 câu hỏi", "OK", null, null);
             noticeDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
                 @Override
                 public void onDismiss(DialogInterface dialog) {
@@ -468,7 +468,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
             checkAnswer(v, MusicManager.ANS_D, MusicManager.TRUE_D, 4);
         }
         if(v.getId()==R.id.btn_change){
-            noticeDialog.setNotification("Báº¡n thá»±c sá»± muá»‘n Ä‘á»•i cÃ¢u há»i ?", "Äá»“ng Ã½", "Há»§y bá»", new View.OnClickListener() {
+            noticeDialog.setNotification("Bạn muốn thay đổi câu hỏi?", "Đồng ý", "Hủy", new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     if (v.getId() == R.id.btn_ok) {
@@ -619,7 +619,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
 
     public void stopGame() {
         noticeDialog.setCancelable(true);
-        noticeDialog.setNotification("Báº¡n thá»±c sá»± muá»‘n dá»«ng cuá»™c chÆ¡i ?", "Äá»“ng Ã½", "Há»§y bá»", new View.OnClickListener() {
+        noticeDialog.setNotification("Bạn muốn dừng cuộc chơi tại đây?", "Đồng ý", "Hủy", new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if (v.getId() == R.id.btn_ok) {

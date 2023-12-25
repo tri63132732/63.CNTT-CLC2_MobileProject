@@ -108,7 +108,7 @@ public class CallDialog extends Dialog implements View.OnClickListener {
         } else {
             this.trueAnswer = "D";
         }
-        tvAnswer.setText("Theo tÃ´i Ä‘Ã¡p Ã¡n Ä‘Ãºng lÃ  " + this.trueAnswer);
+        tvAnswer.setText("Theo tôi thì đáp án đúng là " + this.trueAnswer);
     }
 }
 

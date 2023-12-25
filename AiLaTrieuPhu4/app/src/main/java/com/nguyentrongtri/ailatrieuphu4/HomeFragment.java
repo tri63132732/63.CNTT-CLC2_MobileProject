@@ -16,8 +16,6 @@ import android.os.Handler;
 import com.nguyentrongtri.ailatrieuphu4.dialog.AboutDialog;
 
 
-
-
 public class HomeFragment extends Fragment implements View.OnClickListener {
 
     @Override
