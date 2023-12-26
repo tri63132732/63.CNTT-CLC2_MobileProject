@@ -87,7 +87,7 @@ public class PlayerActivity extends Activity implements View.OnClickListener {
                 if (timer == 0) {
                     isPlaying = false;
                     App.getMusicPlayer().play(R.raw.out_of_time, null);
-                    noticeDialog.setNotification("Háº¿t giá» !", "ÄÃ³ng", null, null);
+                    noticeDialog.setNotification("Hết giờ !", "OK", null, null);
                     noticeDialog.setOnDismissListener(new DialogInterface.OnDismissListener() {
                         @Override
                         public void onDismiss(DialogInterface dialog) {

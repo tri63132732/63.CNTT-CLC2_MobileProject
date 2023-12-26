@@ -17,7 +17,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class DatabaseManager {
-    private String DATABASE_NAME = "Question.sqlite";
+    private String DATABASE_NAME = "Questions.sqlite";
     private String DATABASE_PATH =
             Environment.getDataDirectory().getAbsolutePath()
                     + "/data/com.nguyentrongtri.ailatrieuphu4/databases";
