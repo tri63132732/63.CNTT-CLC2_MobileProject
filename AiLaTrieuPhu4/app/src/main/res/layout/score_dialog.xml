@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#249182"
+    android:padding="16dp">
+    <TableRow android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:textColor="#cec406"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your score: "/>
+        <TextView android:id="@+id/tv_score"
+            android:paddingLeft="32dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#c72148"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2.000.000 VNĐ"/>
+    </TableRow>
+
+    <EditText
+        android:id="@+id/edt_name"
+        android:layout_width="382dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Your name"
+        android:textSize="20dp"
+        android:paddingLeft="32dp" />
+
+    <Button
+        android:id="@+id/btn_ok"
+        android:layout_width="387dp"
+        android:layout_height="58dp"
+        android:background="@drawable/btn_radius"
+        android:text="Đồng ý"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff" />
+</LinearLayout>
